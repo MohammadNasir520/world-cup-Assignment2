@@ -17,25 +17,13 @@ top banner style
     border-radius: 30px;
     width: 100%;
     height: 100%;
-
+    padding: 60px 120px;
 }
 
-.banner-item1 {
-    width: 100%;
-    height: 100%;
-}
-
-.banner-item1 h1 {
-    margin-left: 106px;
-}
 
 .banner-item1 button {
-    margin-left: 106px;
-    margin-bottom: 50px;
-}
 
-.banner-item1 p {
-    margin-left: 106px;
+    margin-bottom: 50px;
 }
 
 .banner-item1,
@@ -304,13 +292,32 @@ mobile responsive
 ------------------------------------------------------ */
 @media only screen and (max-width: 768px) {
     .top-banner {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        width: auto;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .banner-item1,
+    .banner-item2 {
+        width: 100%;
+    }
+
+    .banner-item1 h1 {
+        font-size: 40px;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    .banner-item1 p {
+        margin-left: 0px;
     }
 
     .banner-item2 img {
-        margin-left: 100px;
+        /* margin-left: 100px; */
         margin-top: 20px;
         height: 80%;
         width: 100%;
@@ -338,6 +345,7 @@ mobile responsive
     }
 
     footer {
+        width: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         height: auto;

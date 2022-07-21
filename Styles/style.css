@@ -166,6 +166,14 @@ top banner style
     margin: 0 10px;
 }
 
+.view-all {
+    text-decoration: none;
+    color: white;
+    padding: 10px 40px;
+    background-color: #DD0000;
+    visibility: hidden;
+}
+
 /* -------------------------------------------------------
 footer style
 -------------------------------------------------------- */
@@ -370,6 +378,10 @@ tab responsiv
     .article-container,
     .schedule {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .view-all {
+        visibility: visible;
     }
 
 }

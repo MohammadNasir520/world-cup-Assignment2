@@ -65,6 +65,10 @@ top banner style
     background-color: green;
 }
 
+
+
+
+/* ---------------------animation kyeframe---------- */
 @keyframes sliding {
     from {
         background-color: #DD0000;
@@ -73,6 +77,9 @@ top banner style
     to {
         background-color: green;
     }
+
+    /* --------------------------------------- */
+
 
 }
 
@@ -336,7 +343,6 @@ mobile responsive
     .three-buttons a {
         width: 252px;
         height: 64px;
-
         background: #FFFFFF;
         border-radius: 10px;
         font-family: 'Poppins';
@@ -344,9 +350,6 @@ mobile responsive
         font-weight: 500;
         font-size: 20px;
         line-height: 30px;
-        /* identical to box height */
-
-
         color: #161616;
         text-decoration: none;
         display: block;

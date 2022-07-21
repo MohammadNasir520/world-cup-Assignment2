@@ -17,13 +17,11 @@ top banner style
     border-radius: 30px;
     width: 100%;
     height: 100%;
-    padding: 60px 120px;
 }
 
-
-.banner-item1 button {
-
-    margin-bottom: 50px;
+.banner-item1 {
+    text-align: center;
+    padding: 0 60px;
 }
 
 .banner-item1,
@@ -40,7 +38,6 @@ top banner style
     font-family: poppins;
     font-weight: 700;
     font-size: 3.2vw;
-    margin-left: 106px;
 }
 
 .banner-item p {
@@ -68,55 +65,39 @@ top banner style
 /* --------------------------------------------------------------
                                     button style
 ------------------------------------------------------------------ */
-.section-blog-button {
+.button-section {
 
     display: flex;
-    margin-top: 130px;
     width: 100%;
-
-
+    margin: 130px auto;
 }
 
 .three-buttons {
-    min-width: 312px;
-    min-height: 312px;
-    max-height: 312px;
+    width: 312px;
+    height: 312px;
     border-radius: 10px;
+    background-color: transparent;
+    margin: 0 auto;
+    text-align: center;
+
     background-color: black;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    margin-right: 24px;
 }
 
-.three-buttons button {
-    font-family: 'Poppins';
-    font-weight: 500;
-    font-size: 20px;
-}
-
-
-
-.Match-button,
-.group-button,
-.blog-button {
+.three-buttons a {
     width: 252px;
     height: 64px;
+    background: #FFFFFF;
     border-radius: 10px;
-    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #161616;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #E8E8E8;
+    margin: 30px 30px;
 }
-
-.blog-button {
-    background-color: #DD0000;
-    color: white;
-}
-
-.group-button {
-    margin-top: 30px;
-    margin-bottom: 30px;
-
-}
-
 
 /* ---------------------------------------------------
                         article section style
@@ -292,17 +273,13 @@ mobile responsive
 ------------------------------------------------------ */
 @media only screen and (max-width: 768px) {
     .top-banner {
-        width: auto;
-        display: flex;
-        justify-content: center;
-        text-align: center;
+        display: grid;
         flex-direction: column;
-        padding: 20px 10px;
     }
 
     .banner-item1,
     .banner-item2 {
-        width: 100%;
+        width: 50%;
     }
 
     .banner-item1 h1 {
@@ -316,14 +293,7 @@ mobile responsive
         margin-left: 0px;
     }
 
-    .banner-item2 img {
-        /* margin-left: 100px; */
-        margin-top: 20px;
-        height: 80%;
-        width: 100%;
-    }
-
-    .section-blog-button,
+    .button-section,
     .article-container,
     .schedule {
         display: grid;
@@ -332,16 +302,36 @@ mobile responsive
     }
 
     .three-buttons {
-        width: auto;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
+        background-color: transparent;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .Match-button {
-        width: 320px;
+    .three-buttons a {
+        width: 252px;
         height: 64px;
-        font-size: 25px;
+
+        background: #FFFFFF;
+        border-radius: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+
+        color: #161616;
+        text-decoration: none;
+        display: block;
+        border: 1px solid #E8E8E8;
+    }
+
+    .match,
+    .group-button,
+    .blog-button {
+        text-align: center;
+
     }
 
     footer {
@@ -360,16 +350,21 @@ mobile responsive
 tab responsiv
 -----------  */
 @media screen and (min-width:768px) and (max-width:992px) {
-    .section-blog-button {
+    .button-section {
         display: grid;
         flex-direction: column;
     }
 
     .three-buttons {
-        grid-template-columns: repeat(3, 1fr);
-        width: auto;
         height: auto;
+        width: 100%;
         background-color: white;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .three-buttons a {
+        margin: 0;
     }
 
     .article-container,

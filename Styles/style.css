@@ -55,7 +55,12 @@ top banner style
     background-color: #DD0000;
     border-radius: 5px;
     padding: 5px 25px;
+    transition: transform 3s linear;
+}
 
+.top-banner:hover .button1 {
+    transform: scale(1.5);
+    background-color: green;
 }
 
 .fa-greater-than {
@@ -291,7 +296,7 @@ mobile responsive
     }
 
     .banner-item1 h1 {
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
         margin-left: 0;
 

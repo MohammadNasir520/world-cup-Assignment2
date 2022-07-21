@@ -56,11 +56,24 @@ top banner style
     border-radius: 5px;
     padding: 5px 25px;
     transition: transform 3s linear;
+    animation: sliding 2s ease-in-out 0s infinite alternate none;
+    animation-play-state: running;
 }
 
 .top-banner:hover .button1 {
     transform: scale(1.5);
     background-color: green;
+}
+
+@keyframes sliding {
+    from {
+        background-color: #DD0000;
+    }
+
+    to {
+        background-color: green;
+    }
+
 }
 
 .fa-greater-than {
